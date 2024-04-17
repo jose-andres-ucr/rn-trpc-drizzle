@@ -1,0 +1,23 @@
+{
+  // Based on Pococks's recommendation: https://x.com/mattpocockuk/status/1701619240686485799 (tsc won't be used as transpiler)
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": true,
+    "useDefineForClassFields": true,
+    // If NOT transpiling with TypeScript:
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@ucr-template/db",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "drizzle-kit generate:sqlite --schema=./src/schema.ts",
+    "deploy:dev": "tsx --env-file=.env.dev src/migrator.ts"
+  },
+  "devDependencies": {
+    "@libsql/client": "^0.6.0",
+    "@types/node": "^20",
+    "drizzle-kit": "^0.20.14",
+    "drizzle-orm": "^0.30.8",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  },
+  "type": "module"
+}
